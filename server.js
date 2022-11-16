@@ -1,5 +1,5 @@
-require("./src/db/mongoconfig");
-require("./src/passport/local.js");
+require("../src/db/mongoconfig");
+require("./passport/local.js");
 const express = require("express");
 
 const productos = require("./src/routes/productos.js");
