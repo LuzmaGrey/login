@@ -1,11 +1,11 @@
-require("../src/db/mongoconfig");
+require("../src/db/mongoconfig.js");
 require("./passport/local.js");
 const express = require("express");
 
-const productos = require("./src/routes/productos.js");
+const productos = require("../src/routes/productos.js");
 const http = require("http");
 const { knexMySql } = require("./src/db/db.js");
-const Mensaje = require("./src/models/Mensajes.js");
+const Mensaje = require("../src/models/Mensajes.js");
 const { normalize, schema } = require("normalizr");
 const { inspect } = require("util");
 const session = require("express-session");
